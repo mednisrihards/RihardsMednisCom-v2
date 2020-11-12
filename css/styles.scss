@@ -16,6 +16,7 @@ body {
     color: $color-white;
     background-color: $color-black;
     max-width: 100vw;
+    position: relative;
 }
 
 section {
@@ -23,6 +24,24 @@ section {
     overflow-x: hidden;
 }
 
+.overlay {
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    transition: all 2s;
+    font-size: 3em;
+    
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        color: black;
+    }
+}
 nav {
     display: none;
 }

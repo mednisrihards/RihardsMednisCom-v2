@@ -50,7 +50,7 @@ function allLoaded (){
         }
     });
 
-    tl.from(photo, {scaleY: 0, transformOrigin: "top", duration: .7, delay: .4,});
+    tl.from(photo, {scaleY: 0, transformOrigin: "top", duration: .7, delay: 2,});
     tl.from(greeting, {opacity: 0, duration: .1, y: 500});
     tl.from(name, {opacity: 0, duration: .1, delay: .6, x: 500});
     tl.to(paragraph, {y: 0, opacity: 1, duration: 1, delay: .4, lineHeight: 3});

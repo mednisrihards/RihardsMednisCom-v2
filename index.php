@@ -34,7 +34,7 @@
         <h1 class="projects__title">Few things that I have made so far...</h1>
         <div class="projects__card">
             <div class="projects__card-inner">
-                <img src="./img/spotify.png" alt="Vacancies spot" class="projects__preview">
+                <img src="./img/vacancies.png" alt="Vacancies spot" class="projects__preview">
                 <div class="projects__content">
                     <h1 class="projects__name">React vacancies spot (Under construction)</h1>
                     <p class="projects__description">Uses React and Apollo+GraphQL to 

@@ -178,13 +178,13 @@
                 <div class="resume__exp">
                     <h2>Experience</h2>
                     <h1>Scandiweb LTD</h1>
-                    <p>Junior web developer</p>
+                    <p>Junior web developer (Internship)</p>
                     <h1>VAS "Latvian State Radio and Television Center"</h1>
                     <p>Customer service representative</p>
                     <h1>SIA "Avoni Technology"</h1>
                     <p>Junior software administrator</p>
                     <h1>SIA "Ātrais kredīts"</h1>
-                    <p>Intern</p>
+                    <p>Internship</p>
                 </div>
             </div>
         </div>

@@ -1,5 +1,8 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+require_once __DIR__ . '/vendor/autoload.php';
+$dotenv = \Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 if(isset($_POST["email"]) && isset($_POST["message"])){
     
@@ -13,8 +16,6 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     $body .= "Subject: ".$subject. "<br>";
     $body .= "Message: ".$message. "<br>";
 
-    $credentials = parse_ini_file("../RihardsMednis_key/FBvtPMMnQ7cWVwR4hQG5pGTHg.ini");
-
     require_once "PHPMailer/PHPMailer.php";
     require_once "PHPMailer/SMTP.php";
     require_once "PHPMailer/Exception.php";
@@ -24,8 +25,8 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     $mail -> isSMTP();
     $mail -> Host = "smtp.gmail.com";
     $mail -> SMTPAuth = true;
-    $mail -> Username = $credentials['username'];
-    $mail -> Password = $credentials['password'];
+    $mail -> Username = $_ENV['USERNAME'];
+    $mail -> Password = $_ENV['PASSWORD'];
     $mail -> Port = 465;
     $mail -> SMTPSecure = "ssl";
 

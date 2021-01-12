@@ -15,6 +15,7 @@
         <span class="text">Scroll down</span>
     </div>
     <div class="overlay">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
         <h1 class="overlay__title">Loading</h1>
     </div>
     <section class="home">
@@ -31,6 +32,51 @@
     </section>
     <section class="projects">
         <h1 class="projects__title">Few things that I have made so far...</h1>
+        <div class="projects__card">
+            <div class="projects__card-inner">
+                <img src="./img/spotify.png" alt="Vacancies spot" class="projects__preview">
+                <div class="projects__content">
+                    <h1 class="projects__name">React vacancies spot (Under construction)</h1>
+                    <p class="projects__description">Uses React and Apollo+GraphQL to 
+                        fetch the database and get added vacancies. App is still in progress so for now 
+                        it only fetches the data from database.
+                    </p>
+                    <div class="projects__tech">
+                        <p>React.js</p>
+                        <p>Apollo</p>
+                        <p>GraphQL</p>
+                        <p>Sass</p>
+                        <p>HTML</p>
+                    </div>
+                    <div class="projects__btns">
+                        <a class="projects__link" href="http://165.22.17.31/Rihards/react-vacancy-frontend/" target="_blank"><p>Live Preview</p></a>
+                        <a class="projects__link" href="https://github.com/mednisrihards/react-vacancy-spot" target="_blank"><p>GitHub</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects__card">
+            <div class="projects__card-inner">
+                <img src="./img/spotify.png" alt="Spotify project" class="projects__preview">
+                <div class="projects__content">
+                    <h1 class="projects__name">React Spotify music app (Under construction)</h1>
+                    <p class="projects__description">Fetches user playlists, finds songs
+                         based on search, displays track details, genres and playlists.
+                         (Spotify restricts access to user account automatically after ~30mins)
+                    </p>
+                    <div class="projects__tech">
+                        <p>React.js</p>
+                        <p>Javascript</p>
+                        <p>Sass</p>
+                        <p>HTML</p>
+                    </div>
+                    <div class="projects__btns">
+                        <a class="projects__link" href="https://react-music-app-backend.herokuapp.com/login" target="_blank"><p>Live Preview</p></a>
+                        <a class="projects__link" href="https://github.com/mednisrihards/react-music-app" target="_blank"><p>GitHub</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="projects__card">
                 <div class="projects__card-inner">
                     <img src="./img/mars.png" alt="Mars project" class="projects__preview">
@@ -46,7 +92,7 @@
                             <p>HTML</p>
                         </div>
                         <div class="projects__btns">
-                            <a class="projects__link" href="./react-weather-app" target="_blank"><p>Live Preview</p></a>
+                            <a class="projects__link" href="http://165.22.17.31/Rihards/react_mars_weather/" target="_blank"><p>Live Preview</p></a>
                             <a class="projects__link" href="https://github.com/mednisrihards/react-mars-weather" target="_blank"><p>GitHub</p></a>
                         </div>
                     </div>
@@ -64,7 +110,7 @@
                             <p>HTML</p>
                         </div>
                         <div class="projects__btns">
-                            <a class="projects__link" href="./cleaning-services" target="_blank"><p>Live Preview</p></a>
+                            <a class="projects__link" href="https://sandis-co.herokuapp.com/" target="_blank"><p>Live Preview</p></a>
                             <a class="projects__link" href="https://github.com/mednisrihards/sandis-co" target="_blank"><p>GitHub</p></a>
                         </div>
                     </div>
@@ -82,7 +128,7 @@
                             <p>HTML</p>
                         </div>
                         <div class="projects__btns">
-                            <a class="projects__link" href="./application_to_json" target="_blank"><p>Live Preview</p></a>
+                            <a class="projects__link" href="https://application-to-json.herokuapp.com/" target="_blank"><p>Live Preview</p></a>
                             <a class="projects__link" href="https://github.com/mednisrihards/application-to-json" target="_blank"><p>GitHub</p></a>
                         </div>
                     </div>
@@ -103,7 +149,7 @@
                             <p>HTML</p>
                         </div>
                         <div class="projects__btns">
-                            <a class="projects__link" href="./php_storing_items" target="_blank"><p>Live Preview</p></a>
+                            <a class="projects__link" href="http://165.22.17.31/Rihards/php_storing_items/" target="_blank"><p>Live Preview</p></a>
                             <a class="projects__link" href="https://github.com/mednisrihards/PHP-items-storage" target="_blank"><p>GitHub</p></a>
                         </div>
                     </div>

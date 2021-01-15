@@ -35,10 +35,8 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     // For HEROKU
     $mail -> Username = getenv('USERNAME');
     $mail -> Password = getenv('PASSWORD');
-    // $mail -> Port = 465;
-    // $mail -> SMTPSecure = "ssl";
-    $mail -> Port = 587;
-    $mail -> SMTPSecure = "tls";
+    $mail -> Port = 465;
+    $mail -> SMTPSecure = "ssl";
     
     $mail -> isHTML(true);
     $mail -> setFrom("mednisrihardscom@gmail.com", $email);

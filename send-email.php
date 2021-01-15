@@ -47,7 +47,7 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     if ($mail -> send()){
         $response = "ok";
     } else {
-        $response = "ERROR SENDING MAIL:  " . $mail -> ErrorInfo;
+        $response = getenv('USERNAME') . "ERROR SENDING MAIL:  " . $mail -> ErrorInfo;
     }
 }
 

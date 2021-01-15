@@ -239,8 +239,6 @@ function allLoaded (){
                     alert(this.response);
                     alertMsg.style.color = "red";
                     alertMsg.innerHTML = "Error sending email!";
-                    document.querySelector('.contact__email').value = '';
-                    document.querySelector('.contact__message').value = '';
                 }
             }
             xhttp.send(data);

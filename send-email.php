@@ -1,7 +1,7 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 
-// For local .env files use
+// For own .env files use
 // require_once __DIR__ . '/vendor/autoload.php';
 // $dotenv = \Dotenv\Dotenv::createMutable(__DIR__);
 // $dotenv->load();
@@ -39,7 +39,7 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     $mail -> SMTPSecure = "ssl";
     
     $mail -> isHTML(true);
-    $mail -> setFrom("mednisrihardscom@gmail.com", $email);
+    $mail -> setFrom(getenv('USERNAME') . "@gmail.com", $email);
     $mail -> addAddress("mednis.rihards@gmail.com");
     $mail -> Subject = "Mail from rihardsmednis.com";
     $mail -> Body = $body;
@@ -47,7 +47,7 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     if ($mail -> send()){
         $response = "ok";
     } else {
-        $response = getenv('USERNAME') . "ERROR SENDING MAIL:  " . $mail -> ErrorInfo;
+        $response = "ERROR SENDING MAIL:  " . $mail -> ErrorInfo;
     }
 }
 

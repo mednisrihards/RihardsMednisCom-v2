@@ -25,15 +25,13 @@ if(isset($_POST["email"]) && isset($_POST["message"])){
     $mail -> isSMTP();
     $mail -> Host = "smtp.gmail.com";
     $mail -> SMTPAuth = true;
-    // $mail -> Username = $_ENV['USERNAME'];
-    // $mail -> Password = $_ENV['PASSWORD'];
-    $mail -> Username = getenv('USERNAME');
-    $mail -> Password = getenv('PASSWORD');
+    $mail -> Username = $_ENV['USERNAME'];
+    $mail -> Password = $_ENV['PASSWORD'];
     $mail -> Port = 465;
     $mail -> SMTPSecure = "ssl";
 
     $mail -> isHTML(true);
-    $mail -> setFrom("mednisrihardscom@gmail.com", $email);
+    $mail -> setFrom($_ENV['USERNAME'], $email);
     $mail -> addAddress("mednis.rihards@gmail.com");
     $mail -> Subject = "Mail from rihardsmednis.com";
     $mail -> Body = $body;
